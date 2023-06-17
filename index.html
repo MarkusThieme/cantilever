@@ -848,6 +848,7 @@ which corresponds to a deviation of ${(100 * sy * Math.sin(alpha / 180. * Math.P
             geometrystr = geometrystr.replace(/\r/gm, ``); // convert CRLF to LF
             geometrystr = geometrystr.replace(/\n(\t| )*\n/gm, `\n`); // delete lines which just have white space
             geometrystr = geometrystr.replace(/\n+/gm, `\n`); // delete lines that are compeltely empty
+            geometrystr = geometrystr.replace(/^\n/gm, ``); // delete LF at the beginning
             geometrystr = geometrystr.replace(/\n$/gm, ``); // delete the very last LF
             geometrystr = geometrystr.replace(/(\t| )+/gm, ` `); // replace (multiple) white spaces with space 0x20
             geometrystr = geometrystr.replace(/^ /gm, `\n`); // replace space at the beginning of the line 
@@ -857,7 +858,7 @@ which corresponds to a deviation of ${(100 * sy * Math.sin(alpha / 180. * Math.P
             for (let line of geometrystr) {
                 let t = line.split(' ');
                 
-                switch (t[0]) {
+                switch (t[0].toUpperCase()) {
                     case 'line':
                         geometryelements.push({type: 'line', length: parseFloat(t[1])});
                         break;
