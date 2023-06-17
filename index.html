@@ -1,0 +1,1060 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <title>Cantilever</title>
+    <!--style> 
+      body {font-family: Arial, Helvetica, sans-serif;}
+    </style> -->
+    <!-- Favicon generated with Inkscape and base64 encoded with https://www.base64encode.org/ -->
+    <link id="favicon" rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,
+PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgd2lkdGg9IjUxMiIg
+aGVpZ2h0PSI1MTIiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHhtbG5zPSJo
+dHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1v
+bnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4
+bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPg0K
+IDxkZWZzPg0KICA8bWFya2VyIGlkPSJBcnJvdzJNZW5kIiBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJs
+ZSIgb3JpZW50PSJhdXRvIj4NCiAgIDxwYXRoIHRyYW5zZm9ybT0ic2NhbGUoLjYpIHJvdGF0ZSgx
+ODApIHRyYW5zbGF0ZSgwKSIgZD0ibTguNzE4NiA0LjAzMzctMTAuOTI2LTQuMDE3NyAxMC45MjYt
+NC4wMTc3Yy0xLjc0NTUgMi4zNzIxLTEuNzM1NCA1LjYxNzUtNmUtNyA4LjAzNTR6IiBzdHlsZT0i
+ZmlsbC1ydWxlOmV2ZW5vZGQ7ZmlsbDojMDAwMDAwO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJv
+a2Utd2lkdGg6LjYyNTtzdHJva2U6IzAwMDAwMCIvPg0KICA8L21hcmtlcj4NCiAgPG1hcmtlciBp
+ZD0iQXJyb3cxTGVuZCIgc3R5bGU9Im92ZXJmbG93OnZpc2libGUiIG9yaWVudD0iYXV0byI+DQog
+ICA8cGF0aCB0cmFuc2Zvcm09InNjYWxlKC44KSByb3RhdGUoMTgwKSB0cmFuc2xhdGUoMTIuNSki
+IGQ9Im0wIDAgNS01LTE3LjUgNSAxNy41IDUtNS01eiIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2Rk
+O2ZpbGw6IzAwMDAwMDtzdHJva2Utd2lkdGg6MXB0O3N0cm9rZTojMDAwMDAwIi8+DQogIDwvbWFy
+a2VyPg0KICA8bWFya2VyIGlkPSJBcnJvdzFMZW5kLTUiIHN0eWxlPSJvdmVyZmxvdzp2aXNpYmxl
+IiBvcmllbnQ9ImF1dG8iPg0KICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoLS44IDAgMCAtLjgg
+LTEwIDApIiBkPSJtMCAwIDUtNS0xNy41IDUgMTcuNSA1eiIgc3R5bGU9ImZpbGwtcnVsZTpldmVu
+b2RkO2ZpbGw6IzAwMDAwMDtzdHJva2Utd2lkdGg6MXB0O3N0cm9rZTojMDAwMDAwIi8+DQogIDwv
+bWFya2VyPg0KICA8bWFya2VyIGlkPSJBcnJvdzJNZW5kLTMiIHN0eWxlPSJvdmVyZmxvdzp2aXNp
+YmxlIiBvcmllbnQ9ImF1dG8iPg0KICAgPHBhdGggdHJhbnNmb3JtPSJzY2FsZSgtLjYpIiBkPSJt
+OC43MTg2IDQuMDMzNy0xMC45MjYtNC4wMTc3IDEwLjkyNi00LjAxNzdjLTEuNzQ1NSAyLjM3MjEt
+MS43MzU0IDUuNjE3NS02ZS03IDguMDM1NHoiIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtmaWxs
+OiMwMDAwMDA7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS13aWR0aDouNjI1O3N0cm9rZToj
+MDAwMDAwIi8+DQogIDwvbWFya2VyPg0KIDwvZGVmcz4NCiA8bWV0YWRhdGE+DQogIDxyZGY6UkRG
+Pg0KICAgPGNjOldvcmsgcmRmOmFib3V0PSIiPg0KICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3ht
+bDwvZGM6Zm9ybWF0Pg0KICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3Jn
+L2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiLz4NCiAgICA8ZGM6dGl0bGUvPg0KICAgPC9jYzpXb3Jr
+Pg0KICA8L3JkZjpSREY+DQogPC9tZXRhZGF0YT4NCiA8dGV4dCB4PSIyMDEuOTI0MyIgeT0iMjA2
+LjMwMDM4IiBzdHlsZT0iZmlsbDojMDAwMDAwO2ZvbnQtZmFtaWx5OnNhbnMtc2VyaWY7Zm9udC1z
+aXplOjE0NHB4O2xpbmUtaGVpZ2h0OjEuMjUiIHhtbDpzcGFjZT0icHJlc2VydmUiPjx0c3BhbiB4
+PSIyMDEuOTI0MyIgeT0iMjA2LjMwMDM4IiBzdHlsZT0iZm9udC1zaXplOjE0NHB4Ij5EUzx0c3Bh
+biBzdHlsZT0iYmFzZWxpbmUtc2hpZnQ6c3VwZXI7Zm9udC1zaXplOjE0NHB4Ij4zPC90c3Bhbj48
+L3RzcGFuPjwvdGV4dD4NCiA8cGF0aCBkPSJtMzUuNzQ3IDQ3NC40OWgzMzQuOTciIHN0eWxlPSJm
+aWxsOm5vbmU7bWFya2VyLWVuZDp1cmwoI0Fycm93Mk1lbmQpO21hcmtlci1taWQ6dXJsKCNBcnJv
+dzFMZW5kKTtzdHJva2Utd2lkdGg6OS42NTMzO3N0cm9rZTojMDAwMDAwIi8+DQogPHBhdGggZD0i
+bTM1Ljc0NyA0NzQuNDkgMTAwLjY1LTM0NS4wOCIgc3R5bGU9ImZpbGw6bm9uZTttYXJrZXItZW5k
+OnVybCgjQXJyb3cyTWVuZC0zKTttYXJrZXItbWlkOnVybCgjQXJyb3cxTGVuZC01KTtzdHJva2Ut
+d2lkdGg6MTA7c3Ryb2tlOiMwMDAwMDAiLz4NCiA8ZWxsaXBzZSB0cmFuc2Zvcm09Im1hdHJpeCgu
+NzM3OSAuNjc0OTEgLS42OTA4MyAuNzIzMDIgMCAwKSIgY3g9IjM5OS41NSIgY3k9Ijc4LjM3NyIg
+cng9IjEyMi4yMiIgcnk9Ijc1LjU4NCIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2Utd2lkdGg6MTEu
+MTtzdHJva2U6IzAwMDdkNiIvPg0KPC9zdmc+DQo=">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://cdn.plot.ly/plotly-2.24.1.min.js'></script>
+
+
+    <!-- display: none makes sure that the default input button is not shown
+	cursor:pointer makes sure that a pointer appears when hovering over the input button-->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CSS spacing, padding and margin explained 
+https://blog.hubspot.com/website/css-margin-vs-padding#:~:text=In%20CSS%2C%20a%20margin%20is,the%20space%20inside%20an%20element. -->
+    <!-- Das ist ein Kommentar -->
+    <div style="margin:20px;">
+        <h1>Analyse a cantilever beam</h1>
+        <p>This web app analyses a cantilever beam of arbitrary shape using the Euler-Bernoulli beam theory.
+        </p>
+        <p><span id="displayinformation"></span></p>
+
+        <p>
+
+        <p>Geometry:<br></p>
+        <p><textarea id="geometry" rows="10" cols="30"></textarea></p>
+        <p>Width:<br><input id="width" size="30" autocomplete="off"> mm </p>
+        <p>Minimum thickness:<br><input id="minthickness" size="30" autocomplete="off"> mm </p>
+        <p>Young's modulus:<br><input id="young" size="30" autocomplete="off"> N/mm^2</p>
+        <p>Force:<br><input id="force" size="30" autocomplete="off"> N </p>
+        <p>Relative angle of the force <br>with respect to the orientation 
+            of the end of the beam:<br><input id="relforceangle" size="30" autocomplete="off"> ° </p>
+        <p>Desired deflection:<br><input id="deflection" size="30" autocomplete="off"> mm </p>
+         
+        <br>
+        <button id="analyse" type="button" class="btn btn-primary">Analyse beam</button>
+        <br>
+        <br>
+        <div id="beamplot"></div>
+        <br>
+        <div id="torquesplot"></div>
+        </p>
+
+        <p>Tip: Bookmark this page to store the data you have entered.</p>
+        </br>
+
+        <div id="console_log"></div>
+        <div id="variablearea"></div>
+        <br><br>
+        <div id="infobeam"></div>
+
+
+
+
+
+        <!-- onsubmit="return false" prevents page reload when enter is pressed while focus is on form
+as per https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit -->
+
+        </br></br>
+        <p>Questions? Suggestions? Email <a
+                href="mailto:markus.thieme@gmx.de?subject=Feedback on Deskew3">Markus Thieme</a>.</p>
+        
+    </div>
+
+
+    <script type="text/javascript">
+        'use strict';
+
+
+        function getinput() {
+            // read all input fields and return their values
+            return {
+                'young': $("#young").val(),
+                'width': $("#width").val(),
+                'minchickness': $("#minthickness").val(),
+                'force': $("#force").val(),
+                'geometry': $("#geometry").val()
+            };
+            console.log(`button "Analyse beam" has been clicked"`)
+        }
+
+
+        function neldermead(f, xstart, xdelta) {
+            // no dependency on global variables
+            // to do: report back if no minimum was actually found
+            /* 
+            return the array of floating point values at which f assumes a minimum;
+            function f, which accepts an array of floating point values as argument, using 
+            the method of Nelder and Mead (downhill simplex method); xstart is an array of starting values; the 
+            initial simplex will be built using xdelta
+            */
+            const verbose = false; // if set to true, prints debugging information at the console
+            const N = xstart.length;
+            let fx = new Array(N + 1);
+            let d;
+            let fr, fc, fe;
+            let m = new Array(N);
+            let r = new Array(N);
+            let c = new Array(N);
+            let e = new Array(N);
+
+            // create initial simplex
+            let simplex = new Array(N + 1);
+            for (let i = 0; i < N; i++) {
+                simplex[i] = new Array(N);
+                simplex[i] = xstart.slice();
+                simplex[i][i] += xdelta[i];
+            }
+            simplex[N] = xstart.slice();
+
+            // Calculate function values of initial simplex
+            for (let i = 0; i < N + 1; i++) {
+                fx[i] = f(simplex[i]);
+            }
+
+            let iworst, isecworst, ibest;
+            let itercount = -1;
+            while (true) {
+                itercount += 1;
+                // set iworst, isecworst, ibest are index of worst, second worst and best point
+                // to do: optimizse algorithm such that it requres one pass only
+                iworst = undefined;
+                isecworst = undefined;
+                ibest = undefined;
+
+                for (let i = 0; i < N + 1; i++) {
+                    if (iworst === undefined) {
+                        iworst = i;
+                        continue;
+                    }
+                    if (fx[i] > fx[iworst]) {
+                        iworst = i;
+                        continue
+                    }
+                }
+                for (let i = 0; i < N + 1; i++) {
+                    if (i !== iworst) {
+                        if (isecworst === undefined) {
+                            isecworst = i;
+                            continue;
+                        }
+                        if (fx[i] > fx[isecworst]) {
+                            isecworst = i;
+                            continue
+                        }
+                    }
+                }
+                for (let i = 0; i < N + 1; i++) {
+                    if (i !== iworst && i !== isecworst) {
+                        if (ibest === undefined) {
+                            ibest = i;
+                            continue;
+                        }
+                        if (fx[i] < fx[ibest]) {
+                            ibest = i;
+                            continue
+                        }
+                    }
+                }
+                if (verbose) console.log(`best value = ${fx[ibest]}`);
+                if (verbose) console.log(`worst value = ${fx[iworst]}`);
+                // break if distance between best and worst below 16.0 * machine epsilon
+                d = 0.0; //calculate distance between best and worst point of the simplex
+                for (let i = 0; i < N; i++) {
+                    d += (simplex[ibest][i] - simplex[iworst][i]) ** 2;
+                }
+                d = Math.sqrt(d)
+                if (verbose) console.log(`fbest = ${fx[ibest]}; d = ${d}, iterations = ${itercount}; ${simplex[ibest]}`);
+                if (d < 16.0 * Number.EPSILON) {
+                    break;
+                }
+                if (itercount > 10000)
+                    break;
+
+                // calculate midpoint of all but best
+                for (let i = 0; i < N; i++) {
+                    m[i] = 0;
+                    for (let j = 0; j < N + 1; j++) {
+                        if (j !== iworst) {
+                            m[i] += simplex[j][i];
+                        }
+                    }
+                    m[i] /= N;
+                }
+
+                // calculate reflexion point
+                for (let i = 0; i < N; i++) {
+                    r[i] = 2.0 * m[i] - simplex[iworst][i];
+                }
+                fr = f(r);
+                if (verbose) console.log(`best ${fx[ibest]}, fr ${fr}`);
+
+                if (fr < fx[ibest]) {
+                    e = new Array(N);
+                    for (let i = 0; i < N; i++) {
+                        e[i] = 3.0 * m[i] - 2.0 * simplex[iworst][i]
+                    }
+                    fe = f(e);
+                    if (fe < fr) {
+                        simplex[iworst] = e.slice();
+                        fx[iworst] = fe;
+                        if (verbose) console.log('expansion');
+                        continue;
+                    }
+                    simplex[iworst] = r.slice();
+                    fx[iworst] = fr;
+                    if (verbose) console.log('reflection');
+                    continue;
+                }
+                if (fr < fx[isecworst]) {
+                    simplex[iworst] = r.slice()
+                    fx[iworst] = fr;
+                    if (verbose) console.log('reflection');
+                    continue;
+                }
+                if (fx[iworst] < fr) {
+                    for (let i = 0; i < N; i++) {
+                        c[i] = 0.5 * (simplex[iworst][i] + m[i]);
+                    }
+                }
+                else {
+                    for (let i = 0; i < N; i++) {
+                        c[i] = 0.5 * (r[i] + m[i]);
+                    }
+                }
+                fc = f(c);
+                if (fc < fx[iworst]) {
+                    simplex[iworst] = c.slice();
+                    fx[iworst] = fc;
+                    if (verbose) console.log('contraction')
+                    continue;
+                }
+                for (let j = 0; j < N + 1; j++) {
+                    if (j !== ibest) {
+                        for (let i = 0; i < N; i++) {
+                            simplex[j][i] = 0.5 * (simplex[j][i] + simplex[ibest][i]);
+                        }
+                        fx[j] = f(simplex[j]);
+                    }
+                }
+                if (verbose) console.log('shrink');
+
+            }
+            return (simplex[ibest]);
+        }
+
+
+
+
+        function printedxy(x, y, sx, sy, alpha) {
+            /* Return the actually printed x and y coordinates when instructing the printer to 
+            print at x and y, with a printer whose x axis prints with a scaling factor of sx and whose
+            y axis prints with a scaling factor of sy and whose angle from the x axis to the
+            y axis is 90° + alpha */
+            return [x * sx - y * sy * Math.sin(alpha / 180 * Math.PI), y * sy * Math.cos(alpha / 180 * Math.PI)];
+        }
+
+
+
+        function errorfunction(par, myoffsets, errtype) {
+
+            /* return an error function for a given par = [sy, sx, alpha] and an array of 
+            offset values which represent the offsets of diameters
+            at offset.length angular positions (myoffsets); the offset values represent the deviations of the measured
+            diameters in mm (positiv is larger than 100 mm) of a cylinder with a set diameter of 100mm;
+            errtype can be rms, max or avg
+            par is an array consisting of sx, sy and alpha */
+            let rmserr = 0;
+            let maxerr = 0;
+            let avgerr = 0;
+            const [sx, sy, alpha] = par;
+            // console.log(`myoffsets within errorfunction is ${myoffsets}`);
+            const N = myoffsets.length;
+            // sx = par[0];
+            // sy = par[1];
+            // alpha = par[2];
+            // console.log(`par within errorfunction =${par}`);
+            // console.log(`Parameters with which errorfunction was called: sx=${sx}, sy=${sy}, alpha=${alpha}`);
+            // let w, i;
+            for (let i = 0; i < N; i++) {
+                const w = i * 360 / N;
+                const diameasured = 100 + myoffsets[i];
+                const [px, py] = printedxy(50 * Math.cos(w / 180 * Math.PI), 50 * Math.sin(w / 180 * Math.PI), sx, sy, alpha);
+                const diamodel = 2 * Math.sqrt(px * px + py * py);
+                rmserr += (diamodel - diameasured) * (diamodel - diameasured);
+                maxerr = Math.max(maxerr, Math.abs(diamodel - diameasured));
+                avgerr += Math.abs(diamodel - diameasured);
+            }
+            if (errtype === 'rms')
+                return Math.sqrt(rmserr / myoffsets.length);
+            else if (errtype === 'max')
+                return maxerr;
+            else if (errtype === 'avg')
+                return avgerr / myoffsets.length;
+            else
+                throw 'errtype must be one of rms, avg or max';
+        }
+
+
+        function offsets2sxsyalpha(myoffsets) {
+            // no dependency on global variables
+            /* return estimates of sy, sy and alpha of a printer which prints a cylinder with a 
+            set diameter of 100mm at the diameter values specified in offsets */
+
+            // wrapper for the error function to be used as callback function for neldermead
+            function ef(par) {
+                // console.log(par);
+                const r = errorfunction(par, myoffsets, 'rms');
+                // console.log(`current error is ${r}`);
+                return r;
+            }
+            const starttime = Date.now(); // for timing neldermead
+            const [sx, sy, alpha] = neldermead(ef, [1, 1, 0], [0.01, 0.01, 1]);
+            console.log([sx, sy, alpha]);
+            console.log(`took ${Date.now() - starttime}ms`);
+            console.log(`If left uncorrected, a flat square with a setpoint lenght of 100mm would be printed
+${(sx - 1) * 100} mm to broad (x direction) and 
+${(sy - 1) * 100} mm to deep (y direction) and
+skewed at an angle of ${alpha} degrees (positive is in the direction of the negative x axis),
+which corresponds to a deviation of ${100 * sy * Math.sin(alpha / 180 * Math.PI)} mm per 100 mm.`);
+            return [sx, sy, alpha];
+        }
+
+
+        function getprintermatrix(par) {
+            // no dependency on global variables
+            /* 
+            calculate the correction matrix for the printer, i.e. the matrix
+            m11, m12, m21, m22 with which x and y needs to be multiplied to get the
+            pre-distorted values x and y which ultimately will be sent to the printer
+            */
+            const [sx, sy, alpha] = par;
+            const [p11, p21] = printedxy(1, 0, sx, sy, alpha);
+            const [p12, p22] = printedxy(0, 1, sx, sy, alpha);
+            // correction matrix is inverse of the matrix of the printer
+            console.log(`sx, sy, alpha in getprintermatrix = ${sx}, ${sy}, ${alpha}`);
+            console.log(`p11=${p11}, p12=${p12}, `);
+            console.log(`p21=${p21}, p22=${p22}, `);
+            const det = p11 * p22 - p21 * p12;
+            const m11 = p22 / det;
+            const m22 = p11 / det;
+            const m12 = - p12 / det;
+            const m21 = - p21 / det;
+            console.log(`within getprintermatrix: m11 = ${m11}, m12=${m12}, m21=${m21}, m22=${m22}`);
+
+            return [m11, m12, m21, m22];
+        }
+
+        function fileloaded(file, buffer) {
+
+            /* this function is being called upon completion of the loading of an STL file */
+            const starttime = Date.now();
+            const inbuffer = new DataView(buffer);
+            const facetnumber = inbuffer.getUint32(80, true); // number of facets
+
+
+            const temp = offsets2sxsyalpha(offsetstr2float().offsetsfloat);
+            // console.log(`***************** temp within fileloaded is ${temp}`);
+            const [m11, m12, m21, m22] = getprintermatrix(offsets2sxsyalpha(offsetstr2float().offsetsfloat));
+
+            // console.log(`within fileloaded: m11 = ${m11}, m12=${m12}, m21=${m21}, m22=${m22}`);
+
+            let outarray = new ArrayBuffer(buffer.byteLength);
+            let outbuffer = new DataView(outarray);
+
+            console.log(`Fileloaded was called for file ${file.name}`);
+            console.log(`Buffer size is ${buffer.byteLength}`);
+            console.log(buffer);
+            console.log(`Expected file size according to the number of facets: ${80 + 4 + (4 * 4 * 3 + 2) * facetnumber}`);
+            // $('#displayfilecontent').html(`Number of facets: ${facetnumber}</br></br>`);
+            // copy header from inbuffer to outbuffer
+            for (let i = 0; i < 80; ++i) {
+                outbuffer.setUint8(i, inbuffer.getUint8(i));
+            }
+            // copy number of facets
+            outbuffer.setUint32(80, inbuffer.getUint32(80, true), true);
+
+
+            console.log(facetnumber);
+            for (let i = 0; i < facetnumber; ++i) {
+                const o = 84 + 50 * i;
+                const nx = inbuffer.getFloat32(o + 0, true);
+                const ny = inbuffer.getFloat32(o + 4, true);
+                const nz = inbuffer.getFloat32(o + 8, true);
+
+                const ax = inbuffer.getFloat32(o + 12, true);
+                const ay = inbuffer.getFloat32(o + 16, true);
+                const az = inbuffer.getFloat32(o + 20, true);
+
+                const bx = inbuffer.getFloat32(o + 24, true);
+                const by = inbuffer.getFloat32(o + 28, true);
+                const bz = inbuffer.getFloat32(o + 32, true);
+
+                const cx = inbuffer.getFloat32(o + 36, true);
+                const cy = inbuffer.getFloat32(o + 40, true);
+                const cz = inbuffer.getFloat32(o + 44, true);
+
+                if (i < 10 && false) {
+                    console.log(nx, ny, nz);
+                    console.log(ax, ay, az);
+                    console.log(bx, by, bz);
+                    console.log(cx, cy, cz);
+                    console.log('');
+                };
+
+                // deskew x and y values for all three points of the triangle using printer matrix
+                const axn = ax * m11 + ay * m12;
+                const ayn = ax * m21 + ay * m22;
+                const azn = az;
+
+                const bxn = bx * m11 + by * m12;
+                const byn = bx * m21 + by * m22;
+                const bzn = bz;
+
+                const cxn = cx * m11 + cy * m12;
+                const cyn = cx * m21 + cy * m22;
+                const czn = cz;
+
+                // calculate normal for new triangle
+                const nxn = (byn - ayn) * (czn - bzn) - (bzn - azn) * (cyn - byn);
+                const nyn = (bzn - azn) * (cxn - bxn) - (bxn - axn) * (czn - bzn);
+                const nzn = (bxn - axn) * (cyn - byn) - (byn - ayn) * (cxn - bxn);
+
+
+                outbuffer.setFloat32(o + 0, nxn, true);
+                outbuffer.setFloat32(o + 4, nyn, true);
+                outbuffer.setFloat32(o + 8, nzn, true);
+                outbuffer.setFloat32(o + 12, axn, true);
+                outbuffer.setFloat32(o + 16, ayn, true);
+                outbuffer.setFloat32(o + 20, azn, true);
+                outbuffer.setFloat32(o + 24, bxn, true);
+                outbuffer.setFloat32(o + 28, byn, true);
+                outbuffer.setFloat32(o + 32, bzn, true);
+                outbuffer.setFloat32(o + 36, cxn, true);
+                outbuffer.setFloat32(o + 40, cyn, true);
+                outbuffer.setFloat32(o + 44, czn, true);
+                outbuffer.setUint16(o + 48, 0, true);
+
+            };
+
+
+            if (globaldownloadlink !== '')
+                URL.revokeObjectURL(globaldownloadlink);
+            globaldownloadlink = '';
+            console.log('URL:');
+            globaldownloadlink = URL.createObjectURL(new Blob([outarray], { type: 'model/stl' }));
+            console.log(globaldownloadlink);
+            // $('#downloadbutton').html(`<a download="${'deskewed-' + file.name}" href="${globaldownloadlink}" target="_blank">Download STL file<a>`);
+
+            const duration = (Date.now() - starttime) / 1000;
+            console.log(`${facetnumber} facets processed in ${duration} s`);
+            console.log(`(${duration * 1000000 / facetnumber} microseconds / facet, ${facetnumber / duration} facets / second)`);
+
+
+            $('#variablearea').html(`\
+${file.name} (${facetnumber} facets)</br>
+
+</br>
+
+<a download="${'deskewed-' + file.name}" href="${globaldownloadlink}" target="_blank">
+    <button type="button" class="btn btn-primary">
+        <span class="material-symbols-outlined"
+            style="vertical-align:middle;">
+            save
+        </span>
+        <span style="vertical-align:middle;"> Get de-skewed STL file</span>
+    </button>
+</a>
+
+</br>
+</br>
+Click <span style="text-decoration: underline; cursor: pointer" id='anotherfile'>here</span> to process another file.
+`);
+            $('#anotherfile').click(function () {
+                showopenbutton();
+            })
+
+
+
+        }
+
+        function fileselected(input) {
+            // this function is being called upon selecting a file
+            // https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications
+            let myfilereader = new FileReader();
+
+            // $('#downloadbutton').html(`Please wait ...`);
+            $('#variablearea').html(`Please wait ...`);
+
+            if (input.files[0]) {
+                console.log(input.files[0]);
+                myfilereader.readAsArrayBuffer(input.files[0]);
+                myfilereader.onload = e => { fileloaded(input.files[0], e.target.result); }
+
+
+            }
+            else {
+                showopenbutton();
+            }
+            return false;
+        };
+
+        function offsetstr2float() {
+            // reads offset strings from input fields, converts them to float values and returns the offset values
+            // puts a string in inputnote in case of error, otherwise, inputnote is set to an empty string
+
+            let offsets = new Array(deglist.length);
+            let note = '';
+            for (let i = 0; i < deglist.length; i++) {
+
+                const offsetstring = $('#deg' + deglist[i]).val();
+                const offset = parseFloat(offsetstring);
+                console.log(`Offset parsed = ${offset}`);
+                if (isNaN(offset) || !/^ *[+\-]?((\d\d*(\.\d*)?)|(\.\d\d*)) *$/.test(offsetstring)) {
+                    note = '<p style="color:red"><b>Unrecognised format for diameter or offset; use decimal point</b></p>';
+                }
+                if (i === 0) {
+                    offsets[i] = offset - 100.0;
+                }
+                else {
+                    offsets[i] = offset + offsets[0];
+                }
+                console.log(`offsets[${i}]=${offsets[i]}`);
+                // console.log('from offsetstr2float: ', offsetsfloat)
+            }
+
+            // inputnote = note;
+            // offsetsfloat = offsets.slice();
+            console.log(`offsetsfloat returned by offsetstr2float is ${offsets}`)
+
+            return { inputnote: note, offsetsfloat: offsets };
+
+
+        }
+
+
+
+
+        function inputchanged() {
+            // This function is called when the user edits the printer model or the parameters
+            // invokes offsetstr2float()
+
+            // read printer model and offset values from the forms
+            let printermodel = $('#printermodid').val();
+            let offsetsstr = new Array(deglist.length);
+            for (let i = 0; i < deglist.length; i++) {
+                offsetsstr[i] = $('#deg' + deglist[i]).val();
+            }
+
+            let config = { offsets: offsetsstr, printermodel: printermodel }
+
+
+            // document.title = 'Deskew ' + printermodel;
+
+            if (0) {
+            let configjsonb64 = btoa(JSON.stringify(config));
+
+            document.cookie = `parameters=${configjsonb64}; expires=Tue, 19 Jan 2038 00:00:00 GMT; path=/`;
+
+
+            const newurl = `${location.protocol}//${location.host}${location.pathname}?parameters=${configjsonb64}`;
+            console.log('New URL:', newurl);
+
+            history.replaceState(null, '', newurl);
+            }
+            const { inputnote, offsetsfloat } = offsetstr2float();
+
+            console.log(`offsets got from offsetstr2float is ${offsetsfloat}`);
+
+            const [sx, sy, alpha] = offsets2sxsyalpha(offsetsfloat);
+            console.log(`got inputnote = ${inputnote}`)
+
+            let note = inputnote;
+            if (inputnote.length === 0) {
+                note = `\
+<p>Your printer prints ${((sx - 1.) * 100.).toFixed(3)}% to wide in x direction and
+${((sy - 1.) * 100.).toFixed(3)}% to wide in y direction; the angle from the x to the y
+axis is ${(alpha + 90).toFixed(3)}°.</br>
+If left uncorrected, a flat square with a setpoint lenght of 100mm would be printed
+${((sx - 1.) * 100).toFixed(3)} mm to broad (x direction) and 
+${((sy - 1.) * 100).toFixed(3)} mm to deep (y direction) and
+skewed at an angle of ${alpha.toFixed(3)}° (positive is in the direction of the negative x axis),
+which corresponds to a deviation of ${(100 * sy * Math.sin(alpha / 180. * Math.PI)).toFixed(3)} mm per 100 mm.</p>`;
+            }
+            $('#inputnote').html(note);
+
+            showopenbutton();
+
+
+
+        }
+
+        function console_log (x) {
+            // similar to console.log but displays the message on the html page
+            // useful for debugging on android browser
+            console.log(x)
+
+            // $('#console_log').append(`${JSON.stringify(x)}</br>`)
+        }
+
+
+        function beam(elements, width, minthickness, young, force, relforceangle, deflection) {
+            /* 
+            analyses a beam
+
+            input:
+            elements: array of beam elements
+            width: width of the beam in mm
+            minthickness: minimum thickness in mm for calculating a tapered beam or undefined for uniform beam
+            young: Young's modulus in N/mm^2
+            force: force in N
+            relforceangle: angle of the force relative to the angle of the endpoint of the beam in degrees
+            deflection: desired deflection of the endpoint of the beam in mm
+
+            output:
+
+
+            
+
+            */
+
+            // we first construct the beam from the given elements and represent it as arrays of positions
+
+            // starting point and starting rotation angle for the beam
+            let x = 0;
+            let y = 0;
+            let a = 0;
+
+            // we will build up an array holding the x and y positions
+            // we initialise it with the starting position
+            let xs = [0];
+            let ys = [0];
+
+            // we iterate over the elements to build the beam
+            
+            {
+                const N = 100 // segments per element
+
+                for (let element of elements) {
+                    switch (element.type) {
+                        case 'line':
+                            console_log(`constructing a line of length ${element.length}`)
+                            {
+                                const x = xs[xs.length-1];
+                                const y = ys[ys.length-1];
+                                const deltax = element.length * Math.cos(a) / N;
+                                const deltay = element.length * Math.sin(a) / N;
+                                
+                                for (let i = 1; i < N+1; i++) {
+                                    xs.push(x + deltax * i);
+                                    ys.push(y + deltay * i);
+                                }
+
+                            }
+                            break;
+                        
+                        case 'curve':
+                            console_log(`constructing a curve of radius ${element.radius} and angle ${element.angle}`)
+                            {
+                                const x = xs[xs.length-1];
+                                const y = ys[ys.length-1];
+                                const b = element.angle > 0 ? Math.PI / 2 : - Math.PI / 2;
+                                const xmid = x + element.radius * Math.cos(a + b);
+                                const ymid = y + element.radius * Math.sin(a + b);
+                                const psistart = a - b
+                                const d = element.angle * Math.PI / 180 / N;
+                                for (let i = 1; i < N+1; i++) {
+                                    xs.push(xmid + element.radius * Math.cos(psistart + i * d));
+                                    ys.push(ymid + element.radius * Math.sin(psistart + i * d));
+                                }
+                                
+                                a += element.angle * Math.PI / 180;
+                            }
+
+                            break;
+
+                        case 'angle':
+                            
+                            a += element.angle * Math.PI / 180
+
+                            break;
+                        
+                        default:
+                            console_log('Got to default')
+                            throw `Invalid element ${element.type}`
+                    }
+
+                }
+            }
+
+            // note that a holds the angle in radians of the end of the beam
+
+            // we now have the beam shape; let'as move on to calculate the geometry of the segments that make up the beam
+
+            let dxs = []; // length of each segment in the x direction
+            let dys = [];
+            let dls = []; // length of the segment
+            let cumls = [0]; // cumulated length of the beam
+            let cuml = 0;
+
+            for (let i = 0; i < xs.length-1; i++){
+                let dx = xs[i+1]-xs[i];
+                let dy = ys[i+1]-ys[i];
+                let dl = Math.hypot(dx, dy);
+                dxs.push(dx);
+                dys.push(dy);
+                dls.push(dl);
+                cuml += dl;
+                cumls.push(cuml);
+            }
+
+            // we are done with the geometry; let's take care of the forces
+
+            
+            let forcex = force * Math.cos(a + relforceangle * Math.PI / 180)
+            let forcey = force * Math.sin(a + relforceangle * Math.PI / 180)
+
+            let forceposx = xs[xs.length-1]; // position of the force = end of the beam
+            let forceposy = ys[ys.length-1];
+
+            // calculate the torque at each position
+
+            let torques = new Array(xs.length)
+            for (let i = 0; i < xs.length; i++) {
+                torques[i] = (forceposx - xs[i]) * forcey - (forceposy - ys[i]) * forcex
+            }
+            let maxabstorques = Math.max(...torques.map(Math.abs))
+
+            /*
+            torques = [(fposx - x) * forcey - (fposy - y) * forcex for x, y in zip(xs, ys)]
+            ro.torques = torques
+            maxabstorque = max([abs(torque) for torque in torques])
+            ro.maxabstorque = maxabstorque
+            */
+
+
+
+
+
+
+            // The boundaries of the neutral beam
+            let xmin = Math.min(...xs);
+            let xmax = Math.max(...xs);
+            let ymin = Math.min(...ys);
+            let ymax = Math.max(...ys);
+            let angle = a / Math.PI * 180; // angle of the end of the beam in degrees
+
+            return {xs, ys, xmin, xmax, ymin, ymax, cumls, angle, forceposx, forceposy, force, forcex, forcey, torques, maxabstorques}
+
+
+        }
+
+        function analyse(){
+            // collect user input
+            let geometrystr = $('#geometry').val();
+            let width = $('#width').val();
+            let minthickness = $('#minthickness').val();
+            let young = $('#young').val();
+            let force = $('#force').val();
+            let relforceangle = $('#relforceangle').val();
+            let deflection = $('#deflection').val();
+            let userinput = {geometrystr, width, minthickness, young, force, relforceangle, deflection};
+
+            let configjsonb64 = btoa(JSON.stringify(userinput));
+
+            // document.cookie = `parameters=${configjsonb64}; expires=Tue, 19 Jan 2038 00:00:00 GMT; path=/`;
+
+
+            const newurl = `${location.protocol}//${location.host}${location.pathname}?parameters=${configjsonb64}`;
+            console.log('New URL:', newurl);
+
+            history.replaceState(null, '', newurl);
+
+
+         
+            geometrystr = geometrystr.replace(/(\t| )*#.*/gm, ``); // delete any comments
+            geometrystr = geometrystr.replace(/\r/gm, ``); // convert CRLF to LF
+            geometrystr = geometrystr.replace(/\n(\t| )*\n/gm, `\n`); // delete lines which just have white space
+            geometrystr = geometrystr.replace(/\n+/gm, `\n`); // delete lines that are compeltely empty
+            geometrystr = geometrystr.replace(/\n$/gm, ``); // delete the very last LF
+            geometrystr = geometrystr.replace(/(\t| )+/gm, ` `); // replace (multiple) white spaces with space 0x20
+            geometrystr = geometrystr.replace(/^ /gm, `\n`); // replace space at the beginning of the line 
+            geometrystr = geometrystr.split(/\n/gm); // convert to array of lines
+
+            let geometryelements = [];
+            for (let line of geometrystr) {
+                let t = line.split(' ');
+                
+                switch (t[0]) {
+                    case 'line':
+                        geometryelements.push({type: 'line', length: parseFloat(t[1])});
+                        break;
+                    case 'angle':
+                        geometryelements.push({type: 'angle', angle: parseFloat(t[1])});
+                        break;
+                    case 'curve':
+                        geometryelements.push({type: 'curve', angle: t[1], radius: t[2]});
+                        break;
+                    default:
+                        throw `Invalid geometry element ${t[0]}`
+                }
+            }
+
+
+
+
+
+
+
+            console_log(`geometry entered by the user is ${JSON.stringify(userinput)}`);
+            console.log(`input parameters are  ${userinput}`);
+
+
+
+            // let elements = [{type: 'line', length: 100}, {type: 'curve', radius: 25, angle: 90}, {type: 'angle', angle: 30}, {type: 'line', length: 500}];
+            console.log('elements assigned')
+            let mybeam = beam(geometryelements, width, minthickness, young, force, relforceangle, deflection);
+            console_log(mybeam)
+
+            
+            // Plot the beam 
+            // get a square to which the beam will be put in the lower left corner
+            let side = Math.max(mybeam.xmax - mybeam.xmin, mybeam.ymax - mybeam.ymin) * 1.1
+
+            let beamtrace = {
+                x: mybeam.xs,
+                y: mybeam.ys,
+                mode: 'lines',
+                type: 'scatter',
+                line: {
+                    color: 'rgb(49, 54, 194)',
+                    width: 3
+                },
+            }
+
+            // (mybeam.xmin + mybeam.xmax - side) / 2
+
+            let layout = {
+                xaxis: {range: [(mybeam.xmin + mybeam.xmax - side) / 2, (mybeam.xmin + mybeam.xmax + side) / 2]},
+                yaxis: {range: [(mybeam.ymin + mybeam.ymax - side) / 2, (mybeam.ymin + mybeam.ymax + side) / 2]},
+                width: 500,
+                hight: 500
+            }
+
+            Plotly.newPlot('beamplot', [beamtrace], layout);
+
+            // Plot the torques
+
+            let torquetrace = {
+                x: mybeam.cumls,
+                y: mybeam.torques,
+                mode: 'lines',
+                type: 'scatter',
+                line: {
+                    color: 'rgb(49, 54, 194)',
+                    width: 3
+                },
+            }
+
+
+            layout = {
+                width: 500,
+                hight: 500
+            }
+
+            Plotly.newPlot('torquesplot', [torquetrace], layout);
+
+
+
+
+
+            $('#infobeam').html(`Total length of the beam: ${mybeam.cumls[mybeam.cumls.length-1]} mm`);
+
+        }
+
+
+
+        function main() {
+
+
+            
+            
+
+
+            // register callback function for changes on printer model
+            // $('#printermodid').on('input', inputchanged);
+
+            // register callback functions for input fields for offset values
+            /* 
+            for (let i = 0; i < deglist.length; i++) {
+                $('#deg' + deglist[i]).on('input', inputchanged);
+            }
+            
+
+            let printermodel = '';
+            let offsetsstr = new Array(deglist.length);
+            offsetsstr.fill('+0.0');
+            offsetsstr[0] = '100.0';
+            */
+
+            // check if parameters are encoded in the query string an if so, extract them from the query string
+            if (location.search.startsWith('?parameters=')) {
+                console.log('Parameters in query string found');
+                const querypara = JSON.parse(atob(location.search.slice(12))); // 12 because we want to go past ?parameters=
+                $('#geometry').val(querypara.geometrystr);
+                $('#width').val(querypara.width);
+                $('#minthickness').val(querypara.minthickness);
+                $('#young').val(querypara.young);
+                $('#force').val(querypara.force);
+                $('#relforceangle').val(querypara.relforceangle);
+                $('#deflection').val(querypara.deflection);
+               
+                // {geometry, width, minthickness, young, force, relforceangle, deflection}
+
+
+
+
+             }
+            // to be done: check if parameters are in coockies and if so, extract them from the cockies
+            // otherwise, if nothing has been set
+
+            // populate input field for printer model
+            // $('#printermodid').val(printermodel);
+
+            // populate input fields for offsets
+            /*
+            for (let i = 0; i < deglist.length; i++) {
+                $('#deg' + deglist[i]).val(offsetsstr[i]);
+            }
+            */
+
+
+            // $('#inputnote').html(offsetstr2float().inputnote);
+
+            // inputchanged(); // trigger calculation without user input by simulating user input
+            // showopenbutton();
+
+            $("#analyse").click(function(){console.log(analyse());})
+
+
+        }
+
+        function showopenbutton() {
+            // show the button for opening an STL file
+
+            // https://www.educative.io/answers/how-you-can-style-the-input-file-type-in-forms-using-css
+            // style="cursor:pointer" makes sure that a pointer is shown when hovering over the Text and imag
+            // onclick responds to button pressed, onchange responds to file selected
+            // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
+            // https://developer.mozilla.org/en-US/docs/Web/API/File_API/Using_files_from_web_applications
+            // style="display:none" makes sure that the standard button and file name is not shown
+
+            if (globaldownloadlink !== '') {// revoke blob for file diwonload if existent
+                URL.revokeObjectURL(globaldownloadlink);
+                globaldownloadlink = '';
+            }
+            $('#variablearea').html(`\
+<p>
+</br></br>
+
+
+
+<button type="button" class="btn btn-primary">
+    <label for="myfilereaderbuttonnew">
+    <span class="material-symbols-outlined" style="vertical-align:middle;">
+            folder_open
+        </span>
+        <span style="vertical-align:middle;"> Select your STL file</span>
+  
+    <input id="myfilereaderbuttonnew" type="file" accept=".stl" style="display:none;">
+    </label>
+</button>  
+`);
+            $('#myfilereaderbuttonnew').change(function () { fileselected(this) });
+            $('#myfilereaderbuttonnew2').change(function () { fileselected(this) });
+
+        }
+
+        // The programm starts here:
+        const deglist = ['000', '030', '060', '090', '120', '150', '180', '210', '240', '270', '300', '330'];
+
+        var globaldownloadlink = ''; // holds the URL for downloading the de-skewed file; declared as global to allow revocation of blob
+
+        $(document).ready(() => main()); // only start if everything has been loaded
+
+    </script>
+</body>
+
+</html>
