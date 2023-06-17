@@ -858,7 +858,7 @@ which corresponds to a deviation of ${(100 * sy * Math.sin(alpha / 180. * Math.P
             for (let line of geometrystr) {
                 let t = line.split(' ');
                 
-                switch (t[0].toUpperCase()) {
+                switch (t[0].toLowerCase()) {
                     case 'line':
                         geometryelements.push({type: 'line', length: parseFloat(t[1])});
                         break;
